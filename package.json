@@ -2,7 +2,7 @@
   "name": "myshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://shine-codestove.github.io/myshop",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -14,6 +14,7 @@
     "axios": "^0.27.2",
     "axios-hooks": "^3.1.3",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -21,6 +22,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
